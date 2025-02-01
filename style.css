@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: Raleway, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header > h1 {
+    background: #f18ed3;
+    padding: 16px;
+    color: white;
+    text-align: center;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    margin-inline: 15%;
+    text-align: center;
+}
+section div{
+    margin-top: 2rem;
+    border-radius: 20px;
+    background-color: antiquewhite;
+}
+#bookForm, #searchBook{
+    display: flex;
+    display: block;
+}
+#bookForm div{
+    margin-block: 1.5rem;
+}
+input{
+    font-size: 16px;
+}
+button{
+    padding: 15px;
+    border-radius: 12px;
+    background-color: #ebc7e0;
+    width: 300px;
+    font-size: 1.08rem;
+}
+button:hover{
+    background-color: white;
+    color: #000000;
+    border-color: #f18ed3;
+}
+label{
+    font-family: Arial, Helvetica, sans-serif;
+}
