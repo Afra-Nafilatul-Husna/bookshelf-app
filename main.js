@@ -87,15 +87,15 @@ function buatBukuElement(identitasBuku) {
     // Membuat elemen untuk title, author, dan year
     const elementtitle = document.createElement('h3');
     elementtitle.setAttribute('data-testid', 'bookItemTitle')
-    elementtitle.innerText = `title: ${identitasBuku.title}`;
+    elementtitle.innerText = `Judul: ${identitasBuku.title}`;
 
     const elementauthor = document.createElement('p');
     elementauthor.setAttribute('data-testid', 'bookItemAuthor')
-    elementauthor.innerText = `author: ${identitasBuku.author}`;
+    elementauthor.innerText = `Penulis: ${identitasBuku.author}`;
 
     const elementyear = document.createElement('p');
     elementyear.setAttribute('data-testid', 'bookItemYear')
-    elementyear.innerText = `year: ${identitasBuku.year}`;
+    elementyear.innerText = `Tahun: ${identitasBuku.year}`;
 
    
         // Membuat tombol SELESAI baca
@@ -128,7 +128,7 @@ function buatBukuElement(identitasBuku) {
 
     // Membuat tombol EDIT buku
     const buttonEditBuku = document.createElement('button');
-    buttonEditBuku.innerText = 'Edit Buku';
+    // buttonEditBuku.innerText = 'Edit Buku';
     buttonEditBuku.setAttribute('id', 'btnEditBuku');
     buttonEditBuku.setAttribute('data-testid', 'bookItemEditButton');
     buttonEditBuku.addEventListener('click', function () {
@@ -138,7 +138,7 @@ function buatBukuElement(identitasBuku) {
 
     // Menempatkan tombol-tombol ke dalam satu container tombol
     const buttonContainer = document.createElement('div');
-    buttonContainer.append(buttonSelesaiBaca, buttonHapusBuku, buttonEditBuku);
+    buttonContainer.append(buttonSelesaiBaca, buttonHapusBuku);
 
     // Membuat container utama untuk buku
     const container = document.createElement('div');
